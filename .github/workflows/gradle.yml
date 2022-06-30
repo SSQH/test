@@ -16,6 +16,4 @@ jobs:
         distribution: 'temurin'
     - name: Build with Gradle
       uses: ./.github/test/test.xml@master and ./.github/test/build.gradle@master
-      with:
-        arguments: build
-        run : gradle check
+    - run : gradle check
