@@ -15,8 +15,8 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
     - name: Build with Gradle
-      uses: test/test.xml@master
-    - uses: test/build.gradle@master
+      uses: ./.github/test/test.xml@master
+    - uses: ./.github/test/build.gradle@master
       with:
         arguments: build
         run : gradle check
